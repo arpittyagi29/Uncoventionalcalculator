@@ -1,7 +1,11 @@
 let result=0;
 
 function getuserinput(){
-    return parseInt(userInput.value)
+    let v=parseInt(userInput.value);
+    if (v===0)
+        return;
+    else
+        return v;
 }
 function add(){
     const getnum=getuserinput();
